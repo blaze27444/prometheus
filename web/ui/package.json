@@ -8,7 +8,8 @@
     "build:module": "bash build_ui.sh --build-module",
     "start": "npm run start -w mantine-ui",
     "test": "npm run test --workspaces",
-    "lint": "npm run lint --workspaces"
+    "lint": "npm run lint --workspaces",
+    "postinstall": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   },
   "workspaces": [
     "mantine-ui",
